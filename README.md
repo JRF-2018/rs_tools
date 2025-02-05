@@ -1,7 +1,7 @@
 # 電子書籍ツール for 『宗教学雑考集』
 # E-Book Tools for "Religious Studies"
 
-<!-- Time-stamp: "2025-02-05T17:08:44Z" -->
+<!-- Time-stamp: "2025-02-05T17:10:38Z" -->
 
 ## このツールについて
 
@@ -45,7 +45,7 @@ perl txt2epubhtml.pl sample.txt -o Section0001.xhtml --no-link
 
 ## gen_sample.pl
 
-ここから sample.txt を生成するには、
+main.txt から sample.txt を生成するには、
 
 ```sh
 perl gen_sample.pl main.txt -o sample.txt
