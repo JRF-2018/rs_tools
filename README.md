@@ -1,7 +1,7 @@
 # 電子書籍ツール for 『宗教学雑考集』
 # E-Book Tools for "Religious Studies"
 
-<!-- Time-stamp: "2025-02-05T17:10:38Z" -->
+<!-- Time-stamp: "2025-02-05T18:01:59Z" -->
 
 ## このツールについて
 
@@ -22,9 +22,11 @@
 perl txt2epubhtml.pl sample.txt -o Section0001.xhtml
 ```
 
-できた Section0001.xhtml を先の Sigil で開いた .epub の Section0001.xhtml にコピペして目次を生成し、ツール→Epub3ツール→epub2電子リーダー用のNCX/ガイドの生成 で toc.ncx を生成し、保存すれば完成です。
+できた Section0001.xhtml を Sigil で開いた sample.epub の Section0001.xhtml にコピペして目次を生成し、メタデータを適当にエディットし、保存すれば完成です。
 
-実際のエディットは sample.txt ではなく main.txt というものにしていきます。
+Sigil で、ツール→目次→目次を生成 で、目次を生成するときは、レベル以下:3にし、h1 つまりタイトルだけは目次から除外しておきます。そして、Text の nav.xhtml を Section0001.xhtml より上に持っていきます。ツール→Epub3ツール→epub2電子リーダー用のNCX/ガイドの生成 で toc.ncx も生成しておきます。
+
+なお、実際のテキストのエディットは sample.txt ではなく main.txt というものにしていきます。
 
 main.txt だと、上記コマンドは、
 
